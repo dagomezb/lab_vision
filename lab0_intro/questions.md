@@ -30,13 +30,13 @@
 
 
 5.  Where is the file ``xxxxxx``
-    >   find / -name ``xxxxxx``
+    >   find / -name "xxxxxx"
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   find /usr/src -name ``*gnu*`` | wc -l 
+    >   find /usr/src -name "*gnu*" | wc -l 
 
 7.  How many files contain ``gpl`` inside in ``dir``
-    >   find /usr/src/ -exec grep -l ``gpl`` {} \; | wc -l
+    >   find /usr/src/ -exec grep -l "gpl" {} \; | wc -l
 
 8.  What does the ``cut`` command do?
     >   cut out selected portions of each line of a file
