@@ -151,7 +151,7 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 2.  Try the diffente noise types, and save the noisy images to the repository (5 images)
 3.  Try saving noisy images as jpg, what happens?
 
-    > Answer
+    > By using imwrite or by doing it directly from the figure window (choosing save as) when you try to save the noisy image what happens is that Matlab adds the noise to the image, generates the compressed image and saves the jpg file.
 
 ### Median filter
 
@@ -165,7 +165,7 @@ These filters can be applied to a an image in order to remove noise.
 3.  Try different sizes for the filters
 4.  Which filter works best for salt & pepper noise?
 
-    > Answer
+    > The best filter for salt & pepper noise is the median filter.
 
 For more on noise removal read http://www.mathworks.com/help/images/noise-removal.html
 
@@ -178,7 +178,8 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 2.  Try different sizes for the filters
 3.  What differences do you notice?
 
-    > Answer
+    > In both cases you can parameterize the filter size, but in the Gaussian case you can also define the standard deviation.
+In the average filter the blur effect increases significantly with the size of the kernel, while in the Gaussian case the effect depends not only on the size of the kernel but also on the standard deviation.
 
 ### Sharpen
 
@@ -186,11 +187,11 @@ The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) functio
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
 
-    > Answer
+    > The function imsharpen returns an enhanced version of the input image, where the image features, such as the contrast and edges, have been sharpened.
 
 2.  Sharp a blurred image. What do you notice?
 
-    > Answer
+    > When the image has been blurred before the sharpen filter what happens is that although the contrast gets enhanced the edge detail in the resulting image is less.
 
 ### Edge detection
 
@@ -205,7 +206,7 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
 
-    > Answer
+    > The final result is pretty similar for both filters sobel and prewitt. That's because both filters detect horizontal edges by approximating a vertical gradient.
 
 More sophisticated methods for finding edges can be found in the following pages
     -   http://www.mathworks.com/discovery/edge-detection.html
