@@ -311,7 +311,7 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
 8.  Apply the procedure written above to it (use the train template from the past frame)
 9.  What are the limitations of this method?
 
-    > Answer
+    > The method depends almost entirely on the template and for that reason you should know exactly what you want to find and you must be sure the template is part of the image.
 
 See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
 another example.
