@@ -305,7 +305,7 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     ```
 6.  Explain what the above code does
 
-    > Answer
+    > what the above code does is to show an rgb image created from an image in the YCbCr  color space where each channel is created this way: Cr: is created with "c" without borders and with the contrast augmented. Y: is the original image transformed in an intensity image. Cb: is a matrix with the size of the original image and which value in each position seems to be 0.5. The final result is the original image with the contrast augmented and with the result of the normalized cross-correlation in color.
     
 7.  Now lets find the train in the next frame, read image ``motion05.512.tiff``.
 8.  Apply the procedure written above to it (use the train template from the past frame)
