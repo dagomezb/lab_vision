@@ -30,16 +30,6 @@ elseif strcmp(feature_space,'hsv')
     img = double(img);
 end
 
-%rgb+xy
-%elseif strcmp(feature_space,'rgb+xy')
-%lab+xy
-%elseif strcmp(feature_space,'lab+xy')
-%hsv+xy
-%elseif strcmp(feature_space,'hsv+xy')
-
-%manejo del metodo de clustering
-
-
 if strcmp(clustering_method, 'k-means')    
     [cluster_idx,C] = kmeans(img,number_of_clusters);
     pixel_labels = reshape(cluster_idx,nrows,ncols);
@@ -57,6 +47,9 @@ elseif strcmp(clustering_method, 'hierarchical')
     pixel_labels = reshape(hierarchicalC, nrows, ncols);
     my_segmentation = pixel_labels;
     
+
+%basado en http://www.mathworks.com/help/images/examples/marker-controlled-watershed-segmentation.html
+
 elseif strcmp(clustering_method, 'watershed')
     img = rgb2gray(rgb_image);
     I = img;
